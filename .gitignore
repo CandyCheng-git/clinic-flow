@@ -424,3 +424,63 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# ClinicFlow: keep credentials, private source material and runtime data local.
+# Ignore rules do not remove files already tracked by Git.
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.p7b
+*.p7c
+*.jks
+*.keystore
+secrets.json
+appsettings.Local.json
+appsettings.*.local.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+credentials.json
+service-account*.json
+.npmrc
+.netrc
+.aws/
+.azure/
+.ssh/
+
+# Raw business inputs, exports, uploads, backups and database volumes
+private/
+internal/
+imports/
+exports/
+uploads/
+backups/
+data/raw/
+data/private/
+data/local/
+postgres-data/
+pgdata/
+*.dump
+*.backup
+*.bak
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+*.csv
+*.xlsx
+*.xls
+*.har
+
+# Frontend build/cache and local tooling
+dist/
+coverage/
+.vite/
+playwright-report/
+test-results/
+.DS_Store
+Thumbs.db
