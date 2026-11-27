@@ -484,3 +484,14 @@ playwright-report/
 test-results/
 .DS_Store
 Thumbs.db
+
+# ClinicFlow local output and private Traditional Chinese reading copies
+*.local
+secrets/
+bin/
+obj/
+TestResults/
+data/
+.idea/
+/docs-zh-Hant-local/
+/docs/01-business-requirements/BRD-review-zh-Hant.md
